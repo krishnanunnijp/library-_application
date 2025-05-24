@@ -25,7 +25,7 @@ This is the main project that provides an API for searching books. It has been t
 This secondary project handles authentication and authorization using username, password, and refresh tokens.
 
 * **Service Name:** localhost
-* **Port:** 8080
+* **Port:** 8082
 
 ---
 
