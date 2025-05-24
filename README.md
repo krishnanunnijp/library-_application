@@ -1,12 +1,13 @@
 
-
 # Project Overview
 
 This project consists of two separate applications:
 
+---
+
 ### 1. Library
 
-This is the main project which provides an API for searching books. It has been tested with sample data and can be run locally using the provided JAR file.
+This is the main project that provides an API for searching books. It has been tested with sample data and can be run locally.
 
 * **Service Name:** localhost
 * **Port:** 8080
@@ -26,7 +27,9 @@ This secondary project handles authentication and authorization using username, 
 * **Service Name:** localhost
 * **Port:** 8080
 
-#### Example API calls:
+---
+
+## Example API Calls
 
 * **User Registration:**
 
@@ -62,6 +65,40 @@ This secondary project handles authentication and authorization using username, 
 
 ---
 
+# How to Build and Run
+
+For **both** projects, follow these steps:
+
+### Build the JAR
+
+```bash
+mvn clean install
+```
+
+### Run the Application
+
+```bash
+java -jar target/{your-app-name}.jar
+```
+
+✅ **Example for Library:**
+
+```bash
+cd library
+mvn clean install
+java -jar target/library-0.0.1-SNAPSHOT.jar
+```
+
+✅ **Example for SecurityService:**
+
+```bash
+cd securityservice
+mvn clean install
+java -jar target/securityservice-0.0.1-SNAPSHOT.jar
+```
+
+---
+
 # Action Plan
 
 1. **Deploy to Docker Hub**
@@ -76,7 +113,7 @@ This secondary project handles authentication and authorization using username, 
 
    **API Gateway Plan:**
 
-   * Route incoming requests to appropriate backend services.
+   * Route incoming requests to the appropriate backend services.
    * Enhance security and authorization at the gateway level.
    * Provide easy configuration for adding new APIs or microservices.
 
